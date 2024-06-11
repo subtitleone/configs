@@ -1,0 +1,8 @@
+{
+  "id": "main",
+  "version": "1",
+  "closeable": true,
+  "expires": "2025-01-01T00:00:00Z",
+  "message": "Subtitle One has permanently moved here at **https://subtitleone.cc**.",
+  "level": "info"
+}
