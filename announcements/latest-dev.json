@@ -1,0 +1,9 @@
+{
+  "id": "main",
+  "version": "1",
+  "closeable": true,
+  "variant": "filled",
+  "expires": "2025-01-01T00:00:00Z",
+  "message": "Subtitle One has permanently moved here at **https://subtitleone.cc**.\nIf you're having issues with subpicture conversion, try clearing your browser cache or incognito mode.",
+  "level": "info"
+}
