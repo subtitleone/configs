@@ -7,7 +7,7 @@
   "message": "Subtitle One has permanently moved here at **https://subtitleone.cc**.",
   "level": "info"
 }, {
-  "id": "recatpcha",
+  "id": "recaptcha",
   "version": "1",
   "closeable": true,
   "variant": "standard",
