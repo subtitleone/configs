@@ -1,9 +1,17 @@
 {
   "id": "main",
   "version": "2",
-  "closeable": true,
-  "variant": "filled",
-  "expires": "2025-01-01T00:00:00Z",
-  "message": "Subtitle One has permanently moved here at **https://subtitleone.cc**.<br />If you're having issues with subpicture conversion, try clearing your browser cache or incognito mode.",
-  "level": "info"
+  "contents": [{
+    "closeable": true,
+    "variant": "filled",
+    "expires": "2025-01-01T00:00:00Z",
+    "message": "Subtitle One has permanently moved here at **https://subtitleone.cc**.<br />If you're having issues with subpicture conversion, try clearing your browser cache or incognito mode.",
+    "level": "info"
+  }, {
+    "closeable": true,
+    "variant": "outlined",
+    "expires": "2025-01-01T00:00:00Z",
+    "message": "If you encounter \"Failed site verification check\" error, try disabling your VPN. We use Google Recaptcha to prevent abuse and it often blocks IP addresses from VPN servers.",
+    "level": "info"
+  }]
 }
