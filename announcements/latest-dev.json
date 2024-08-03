@@ -11,7 +11,15 @@
   "version": "1",
   "closeable": true,
   "variant": "standard",
-  "expires": "2030-01-01T00:00:00Z",
+  "expires": "2024-01-01T00:00:00Z",
   "message": "If you encounter \"Failed site verification check\" error, try disabling your VPN. We use Google Recaptcha to prevent abuse, and it often blocks IP addresses from popular VPN servers.",
+  "level": "info"
+}, {
+  "id": "share",
+  "version": "1",
+  "closeable": false,
+  "variant": "standard",
+  "expires": "2025-01-01T00:00:00Z",
+  "message": "If you find this website useful and you'd like to support us, you can donate or share a link to this website on your social media, forums, blogs, etc. It will be much appreciated.",
   "level": "info"
 }]
