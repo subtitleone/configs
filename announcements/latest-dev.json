@@ -9,9 +9,9 @@
 }, {
   "id": "share",
   "version": "1",
-  "closeable": false,
+  "closeable": true,
   "variant": "standard",
   "expires": "2025-01-01T00:00:00Z",
-  "message": "If you'd like to support us, you can donate or share a link to this website on your social media, forums, blogs, etc. It will be very much appreciated! 🙏🏼",
+  "message": "If you'd like to support us, you can donate or share a link to this website on your social media, forums, blogs, etc. It'll be very much appreciated. 🙏🏼❤️",
   "level": "info"
 }]
