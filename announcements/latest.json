@@ -6,4 +6,12 @@
   "expires": "2030-01-01T00:00:00Z",
   "message": "If you'd like to support us, please share a link to this website on your social media, forums, blogs, etc.",
   "level": "info"
+}, {
+  "id": "upload-tip",
+  "version": "1",
+  "closeable": true,
+  "variant": "standard",
+  "expires": "2030-01-01T00:00:00Z",
+  "message": "TIP: You can upload up to 5 subtitle files at once when uploading files for subpicture conversion. Simply select multiple files when uploading.",
+  "level": "info"
 }]
