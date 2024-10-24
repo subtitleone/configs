@@ -12,6 +12,6 @@
   "closeable": true,
   "variant": "standard",
   "expires": "2030-01-01T00:00:00Z",
-  "message": "You can convert up to 5 subtitles at once for subpicture conversion rather than one by one when ads are allowed. Simply select multiple files when uploading.",
+  "message": "You can convert up to 5 subtitles at once for subpicture conversion - when ads are allowed. Simply select multiple files when uploading.",
   "level": "info"
 }]
