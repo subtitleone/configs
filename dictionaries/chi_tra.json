@@ -35,6 +35,7 @@
   {
     "type": "regex",
     "match": "^\"([^\"]+)$",
-    "replace": "\"$1\""
+    "replace": "\"$1\"",
+    "description": "Complete quotes"
   }
 ]

@@ -6,12 +6,36 @@
   },
   {
     "type": "regex",
-    "match": " +",
-    "replace": ""
+    "match": "[“”]",
+    "replace": "\""
   },
   {
     "type": "regex",
-    "match": " *, *",
-    "replace": ", "
+    "match": " +",
+    "replace": "",
+    "description": "Remove spaces"
+  },
+  {
+    "type": "regex",
+    "match": "[\"'“~′\\[]([\\p{Script=Han}, \\?!]+)」",
+    "replace": "「$1」",
+    "description": "Fix corner brackets"
+  },
+  {
+    "type": "regex",
+    "match": "(\\p{Script=Han})([,!\\?\\.])(\\p{Script=Han})",
+    "replace": "$1$2 $3",
+    "description": "Add ending space to punctuations"
+  },
+  {
+    "type": "regex",
+    "match": "《 *([^》]+)",
+    "replace": "《 $1 》"
+  },
+  {
+    "type": "regex",
+    "match": "^\"([^\"]+)$",
+    "replace": "\"$1\"",
+    "description": "Complete quotes"
   }
 ]
