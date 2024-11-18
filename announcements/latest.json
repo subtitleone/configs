@@ -1,9 +1,17 @@
-{
-  "id": "main",
+[{
+  "id": "share",
   "version": "1",
   "closeable": true,
-  "variant": "filled",
-  "expires": "2025-01-01T00:00:00Z",
-  "message": "Subtitle One has permanently moved here at **https://subtitleone.cc**.",
+  "variant": "standard",
+  "expires": "2030-01-01T00:00:00Z",
+  "message": "If you'd like to support us, please share a link to this website on your social media, forums, blogs, etc. It will be much appreciated.",
   "level": "info"
-}
+}, {
+  "id": "upload-tip",
+  "version": "1",
+  "closeable": true,
+  "variant": "standard",
+  "expires": "2030-01-01T00:00:00Z",
+  "message": "For subpicture conversion, you can upload up to 5 subtitles at once when ads are allowed. Simply select multiple files when uploading.",
+  "level": "info"
+}]

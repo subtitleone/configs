@@ -1,9 +1,17 @@
-{
+[{
   "id": "main",
-  "version": "1",
+  "version": "2",
   "closeable": true,
   "variant": "filled",
   "expires": "2025-01-01T00:00:00Z",
-  "message": "Subtitle One has permanently moved here at **https://subtitleone.cc**.\nIf you're having issues with subpicture conversion, try clearing your browser cache or incognito mode.",
+  "message": "Subtitle One has permanently moved here at **https://subtitleone.cc**.",
   "level": "info"
-}
+}, {
+  "id": "share",
+  "version": "1",
+  "closeable": true,
+  "variant": "standard",
+  "expires": "2025-01-01T00:00:00Z",
+  "message": "If you'd like to support us, you can donate or share a link to this website on your social media, forums, blogs, etc. It'll be very much appreciated. 🙏🏼❤️",
+  "level": "info"
+}]
