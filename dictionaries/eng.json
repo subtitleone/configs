@@ -11,8 +11,8 @@
   },
   {
     "type": "regex",
-    "match": "\\/ was",
-    "replace": "I was"
+    "match": "(\\W? ?)\\/ (\\p{L}+)",
+    "replace": "$1I $2"
   },
   {
     "type": "regex",
