@@ -15,4 +15,4 @@ To run the test:
 
 ## Terms
 
-You agree to contribute on a voluntary basis with no compensation nor claim of ownership or intellectual property whatsoever redeemable.
+You agree to contribute without compensation, claim of ownership or intellectual property whatsoever.

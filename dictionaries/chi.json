@@ -6,20 +6,26 @@
   },
   {
     "type": "regex",
+    "match": "\\s?(('-:$)|(^'-:)|('\"')|(\\.\"\"))\\s?",
+    "replace": "...",
+    "description": "Fix ellipsis"
+  },
+  {
+    "type": "regex",
     "match": "[“”]",
     "replace": "\""
   },
   {
     "type": "regex",
-    "match": " +",
-    "replace": "",
-    "description": "Remove spaces"
+    "match": "(\\p{Script=Han}+)\\s+(?=\\p{Script=Han}+)",
+    "replace": "$1",
+    "description": "Remove spaces between Chinese characters"
   },
   {
     "type": "regex",
-    "match": "[\"'“~′\\[]([\\p{Script=Han}, \\?!]+)」",
+    "match": "[\"'“~′\\[_]([^」]+)」",
     "replace": "「$1」",
-    "description": "Fix corner brackets"
+    "description": "Fix incomplete corner brackets"
   },
   {
     "type": "regex",
