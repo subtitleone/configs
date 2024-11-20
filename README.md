@@ -12,3 +12,7 @@ Please create a PR with complete unit tests for approval.
 
 To run the test:
 `yarn test`
+
+## Terms
+
+You agree to contribute on a voluntary basis with no compensation nor claim of ownership or intellectual property whatsoever redeemable.
