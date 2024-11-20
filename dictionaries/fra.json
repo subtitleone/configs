@@ -17,6 +17,7 @@
   {
     "type": "regex",
     "match": "(^|\\s)[\\|\\/!l]ci(\\W+)",
-    "replace": "$1Ici$2"
+    "replace": "$1Ici$2",
+    "description": "Replace incorrect 'Ici'"
   }
 ]
