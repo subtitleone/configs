@@ -1,19 +1,14 @@
 [
   {
     "type": "regex",
-    "match": "…7$",
-    "replace": "‧‧‧﹖"
-  },
-  {
-    "type": "regex",
-    "match": "\\s?(('-:$)|(^'-:)|('\"')|(\\.\"\"))\\s?",
-    "replace": "...",
-    "description": "Fix ellipsis"
-  },
-  {
-    "type": "regex",
     "match": "[“”]",
     "replace": "\""
+  },
+  {
+    "type": "regex",
+    "match": "\\s?(('-:$)|(^'-:)|('\"')|(\\.\"\")|(['\"\\.,-:‧\\*]{2,3}\\s?$)|(…7$))\\s?",
+    "replace": "...",
+    "description": "Fix ellipsis"
   },
   {
     "type": "regex",
@@ -23,8 +18,8 @@
   },
   {
     "type": "regex",
-    "match": "[\"'“~′\\[_]([^」]+)」",
-    "replace": "「$1」",
+    "match": "[\"'“~′\\[_]\\s*([^」]+)(\\S)(\\s*)」",
+    "replace": "「$3$1$2$3」",
     "description": "Fix incomplete corner brackets"
   },
   {
@@ -35,8 +30,9 @@
   },
   {
     "type": "regex",
-    "match": "《 *([^》]+)",
-    "replace": "《 $1 》"
+    "match": "《(\\s*)([^》]+)",
+    "replace": "《$1$2$1》",
+    "description": "Fix incomplete double angle brackets"
   },
   {
     "type": "regex",
