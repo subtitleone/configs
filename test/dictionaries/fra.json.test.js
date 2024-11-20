@@ -41,4 +41,11 @@ describe('French dictionary', () => {
     const rule = getRule(dict, 7)
     expect('A/Ô ! Tu '.replace(rule.regex, rule.replace)).toEqual('Allô ! Tu ')
   })
+
+  it(getDescription(dict, 8), () => {
+    const rule = getRule(dict, 8)
+    expect('Niya |'.replace(rule.regex, rule.replace)).toEqual('Niya !')
+    expect('Niya | Niyo'.replace(rule.regex, rule.replace)).toEqual('Niya | Niyo')
+    expect('Niyô|'.replace(rule.regex, rule.replace)).toEqual('Niyô!')
+  })
 })

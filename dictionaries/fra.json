@@ -43,5 +43,11 @@
     "match": "(^|\\s)A\\/Ô(\\W+)",
     "replace": "$1Allô$2",
     "description": "Replace 'A/Ô' with 'Allô'"
+  },
+  {
+    "type": "regex",
+    "match": "(\\p{L}+)( ?)\\|$",
+    "replace": "$1$2!",
+    "description": "Replace ending | with !"
   }
 ]
