@@ -1,7 +1,22 @@
 [
   {
     "type": "regex",
-    "match": "[\\|\\/l]{2}(\\W+)",
-    "replace": "Il$1"
+    "match": "(^|\\s)[\\|\\/!Il]{2}(\\W+)",
+    "replace": "$1Il$2"
+  },
+  {
+    "type": "regex",
+    "match": "(^|\\s)[\\|](\\W+)",
+    "replace": "$1Il$2"
+  },
+  {
+    "type": "regex",
+    "match": "(^|\\s)[\\|Il]([s|S])(\\W+)",
+    "replace": "$1Il$2$3"
+  },
+  {
+    "type": "regex",
+    "match": "(^|\\s)[\\|\\/!l]ci(\\W+)",
+    "replace": "$1Ici$2"
   }
 ]
