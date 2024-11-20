@@ -19,5 +19,29 @@
     "match": "(^|\\s)[\\|\\/!l]ci(\\W+)",
     "replace": "$1Ici$2",
     "description": "Replace incorrect 'Ici'"
+  },
+  {
+    "type": "regex",
+    "match": "(^|\\s)\\[l(\\s[^\\]]+)$",
+    "replace": "$1Il$2",
+    "description": "Replace '[l' with 'Il', not including that enclosed in bracket "
+  },
+  {
+    "type": "regex",
+    "match": "(^|\\s)Qui( ?)([!\\.,])",
+    "replace": "$1Oui$2$3",
+    "description": "Replace 'Qui' with 'Oui' but not 'qui' for the word 'who'"
+  },
+  {
+    "type": "regex",
+    "match": "(^|\\s)I (\\w+)",
+    "replace": "$1Il $2",
+    "description": "Replace 'I' with 'Il'"
+  },
+  {
+    "type": "regex",
+    "match": "(^|\\s)A\\/Ô(\\W+)",
+    "replace": "$1Allô$2",
+    "description": "Replace 'A/Ô' with 'Allô'"
   }
 ]
