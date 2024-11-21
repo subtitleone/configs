@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "type": "regex",
+    "match": "(^|\\W)[\\|](\\W+)",
+    "replace": "$1I$2",
+    "description": "Replace | with I"
+  },
+  {
+    "type": "regex",
+    "match": "^le(\\W+)",
+    "replace": "Ile$1",
+    "description": "Replace 'le' at the start"
+  }
+]
