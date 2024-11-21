@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "type": "regex",
+    "match": "(^|\\W)SÍ(^\\p{L}|\\W|$)",
+    "replace": "$1Sí$2",
+    "description": "Replace SÍ. with lowercase"
+  },
+  {
+    "type": "regex",
+    "match": "¿\\s*([^\\?]+ *[^\\? ]+)(\\s*)\\?",
+    "replace": "¿$2$1$2?",
+    "description": "Use equal number of spaces between question marks referencing the right"
+  }
+]
