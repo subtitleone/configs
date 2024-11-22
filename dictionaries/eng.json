@@ -12,12 +12,14 @@
   {
     "type": "regex",
     "match": "(\\W? ?)\\/ (\\p{L}+)",
-    "replace": "$1I $2"
+    "replace": "$1I $2",
+    "description": "Replace / with I"
   },
   {
     "type": "regex",
-    "match": "wasn't 1",
-    "replace": "wasn't I"
+    "match": "(\\p{L}+)n't 1",
+    "replace": "$1n't I",
+    "description": "Replace \"*n't 1\" to \"*n't I\""
   },
   {
     "type": "regex",
@@ -31,8 +33,9 @@
   },
   {
     "type": "regex",
-    "match": "^-1 ",
-    "replace": "-I "
+    "match": "(^| )-(\\s?)1(\\.{2,3})?( |$)",
+    "replace": "$1-$2I$3",
+    "description": "Replace '-1' with '-I'"
   },
   {
     "type": "regex",
@@ -71,7 +74,8 @@
   },
   {
     "type": "regex",
-    "match": "(\\W?)/ would",
-    "replace": "$1I would"
+    "match": "(\\p{Ll},?) You(\\s?(?!\\p{Ll}))",
+    "replace": "$1 you$2",
+    "description": "Replace in sentence 'You'"
   }
 ]
