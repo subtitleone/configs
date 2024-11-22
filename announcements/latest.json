@@ -1,17 +1,29 @@
-[{
-  "id": "share",
-  "version": "1",
-  "closeable": true,
-  "variant": "standard",
-  "expires": "2030-01-01T00:00:00Z",
-  "message": "If you'd like to support us, please share a link to this website on your social media, forums, blogs, etc. It will be much appreciated.",
-  "level": "info"
-}, {
-  "id": "upload-tip",
-  "version": "1",
-  "closeable": true,
-  "variant": "standard",
-  "expires": "2030-01-01T00:00:00Z",
-  "message": "For subpicture conversion, you can upload up to 5 subtitles at once when ads are allowed. Simply select multiple files when uploading.",
-  "level": "info"
-}]
+[
+  {
+    "id": "share",
+    "version": "1",
+    "closeable": true,
+    "variant": "standard",
+    "expires": "2020-01-01T00:00:00Z",
+    "message": "If you'd like to support us, please share a link to this website on your social media, forums, blogs, etc. It will be much appreciated.",
+    "level": "info"
+  },
+  {
+    "id": "upload-tip",
+    "version": "1",
+    "closeable": true,
+    "variant": "standard",
+    "expires": "2030-01-01T00:00:00Z",
+    "message": "For subpicture conversion, you can upload up to 5 subtitles at once when ads are allowed. Simply select multiple files when uploading.",
+    "level": "info"
+  },
+  {
+    "id": "gdpr",
+    "version": "1",
+    "closeable": true,
+    "variant": "standard",
+    "expires": "2024-12-01T00:00:00Z",
+    "message": "There was a misconfiguration that prevented users in Europe from being shown ads. Now that we've fixed the issue, please allow ads on our site as we'd like you to use this site without restrictions. For everyone else who allowed ads, it's much appreciated!",
+    "level": "info"
+  }
+]
