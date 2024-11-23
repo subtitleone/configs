@@ -33,8 +33,8 @@
   },
   {
     "type": "regex",
-    "match": "(^| )-(\\s?)1(\\.{2,3})?( |$)",
-    "replace": "$1-$2I$3",
+    "match": "(^| )-(\\s?)[1\\[](( ?\\.{2,3}|( ?\\w*)))",
+    "replace": "$1-$2I$4",
     "description": "Replace '-1' with '-I'"
   },
   {
@@ -77,5 +77,17 @@
     "match": "(\\p{Ll},?) You(\\s?(?!\\p{Ll}))",
     "replace": "$1 you$2",
     "description": "Replace in sentence 'You'"
+  },
+  {
+    "type": "regex",
+    "match": "^(\\w+ )?(-? ?)\\[((.(?!\\]))+) ?$",
+    "replace": "$1$2I$3",
+    "description": "Replace [ with I"
+  },
+  {
+    "type": "regex",
+    "match": "(\\w+)''s( |$)",
+    "replace": "$1's$2",
+    "description": "Fix duplicate single quotes"
   }
 ]

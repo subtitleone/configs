@@ -22,6 +22,7 @@ describe('English dictionary', () => {
     expect('-1...'.replace(rule.regex, rule.replace)).toEqual('-I...')
     expect('done. -1'.replace(rule.regex, rule.replace)).toEqual('done. -I')
     expect('- 1...'.replace(rule.regex, rule.replace)).toEqual('- I...')
+    expect('- 1 think'.replace(rule.regex, rule.replace)).toEqual('- I think')
   })
 
   it(getDescription(dict, 14), () => {
@@ -32,5 +33,20 @@ describe('English dictionary', () => {
     expect('You there'.replace(rule.regex, rule.replace)).toEqual('You there')
     expect('SEE YOU'.replace(rule.regex, rule.replace)).toEqual('SEE YOU')
     expect('by Youmi Kimura'.replace(rule.regex, rule.replace)).toEqual('by Youmi Kimura')
+  })
+
+  it(getDescription(dict, 15), () => {
+    const rule = getRule(dict, 15)
+    expect('[, too'.replace(rule.regex, rule.replace)).toEqual('I, too')
+    expect('[ too.'.replace(rule.regex, rule.replace)).toEqual('I too.')
+    expect('- [ too.'.replace(rule.regex, rule.replace)).toEqual('- I too.')
+    expect('[ too ]'.replace(rule.regex, rule.replace)).toEqual('[ too ]')
+    expect('May [...?'.replace(rule.regex, rule.replace)).toEqual('May I...?')
+  })
+
+  it(getDescription(dict, 16), () => {
+    const rule = getRule(dict, 16)
+    expect("Bob''s car".replace(rule.regex, rule.replace)).toEqual("Bob's car")
+    expect("Bob' 'Bib".replace(rule.regex, rule.replace)).toEqual("Bob' 'Bib")
   })
 })
