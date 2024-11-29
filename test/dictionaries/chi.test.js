@@ -21,6 +21,7 @@ describe('Chinese dictionary', () => {
     const rule = getRule(dict, 2)
     expect('有 你 的 訪 客'.replace(rule.regex, rule.replace)).toEqual('有你的訪客')
     expect('有 你 1 的 訪'.replace(rule.regex, rule.replace)).toEqual('有你 1 的訪')
+    expect('有 你\n的 訪'.replace(rule.regex, rule.replace)).toEqual('有你\n的訪')
   })
 
   it(getDescription(dict, 3), () => {

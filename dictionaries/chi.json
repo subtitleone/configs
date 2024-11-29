@@ -12,7 +12,7 @@
   },
   {
     "type": "regex",
-    "match": "(\\p{Script=Han}+)\\s+(?=\\p{Script=Han}+)",
+    "match": "(\\p{Script=Han}+) +(?=\\p{Script=Han}+)",
     "replace": "$1",
     "description": "Remove spaces between Chinese characters"
   },
