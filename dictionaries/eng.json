@@ -11,8 +11,8 @@
   },
   {
     "type": "regex",
-    "match": "(\\W? ?)\\/ (\\p{L}+)",
-    "replace": "$1I $2",
+    "match": "(\\W?\\s?)\\/( ?\\p{L}+)",
+    "replace": "$1I$2",
     "description": "Replace / with I"
   },
   {
@@ -33,14 +33,15 @@
   },
   {
     "type": "regex",
-    "match": "(^| )-(\\s?)[1\\[](( ?\\.{2,3}|( ?\\w*)))",
+    "match": "(^|\\s)-(\\s?)[1\\[](( ?\\.{2,3}|( ?\\w*)))",
     "replace": "$1-$2I$4",
     "description": "Replace '-1' with '-I'"
   },
   {
     "type": "regex",
-    "match": "^-l ",
-    "replace": "-I "
+    "match": "(^|-| )[l1](t? )",
+    "replace": "$1I$2",
+    "description": "Replace l with I"
   },
   {
     "type": "regex",

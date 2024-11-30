@@ -8,6 +8,7 @@ describe('English dictionary', () => {
     expect('/ would'.replace(rule.regex, rule.replace)).toEqual('I would')
     expect('-/ would'.replace(rule.regex, rule.replace)).toEqual('-I would')
     expect('- / would'.replace(rule.regex, rule.replace)).toEqual('- I would')
+    expect('(NARRATING) /n ancient'.replace(rule.regex, rule.replace)).toEqual('(NARRATING) In ancient')
   })
 
   it(getDescription(dict, 3), () => {
@@ -20,9 +21,17 @@ describe('English dictionary', () => {
     const rule = getRule(dict, 6)
     expect('-1'.replace(rule.regex, rule.replace)).toEqual('-I')
     expect('-1...'.replace(rule.regex, rule.replace)).toEqual('-I...')
+    expect('first\n-1 did.'.replace(rule.regex, rule.replace)).toEqual('first\n-I did.')
     expect('done. -1'.replace(rule.regex, rule.replace)).toEqual('done. -I')
     expect('- 1...'.replace(rule.regex, rule.replace)).toEqual('- I...')
     expect('- 1 think'.replace(rule.regex, rule.replace)).toEqual('- I think')
+  })
+
+  it(getDescription(dict, 7), () => {
+    const rule = getRule(dict, 7)
+    expect('-l '.replace(rule.regex, rule.replace)).toEqual('-I ')
+    expect("-l did. lt isn't human.".replace(rule.regex, rule.replace)).toEqual("-I did. It isn't human.")
+    expect(" look, it isn't human.".replace(rule.regex, rule.replace)).toEqual(" look, it isn't human.")
   })
 
   it(getDescription(dict, 14), () => {
