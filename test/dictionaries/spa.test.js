@@ -27,4 +27,29 @@ describe('Spanish dictionary', () => {
     expect('¡ abc! ¡abc !'.replace(rule.regex, rule.replace)).toEqual('¡abc! ¡ abc !')
     expect('¡ abc! ¡abc ! ¡abc   !'.replace(rule.regex, rule.replace)).toEqual('¡abc! ¡ abc ! ¡   abc   !')
   })
+
+  it(getDescription(dict, 3), () => {
+    const rule = getRule(dict, 3)
+    expect('s0y'.replace(rule.regex, rule.replace)).toEqual('soy')
+    expect('...s0y '.replace(rule.regex, rule.replace)).toEqual('...soy ')
+    expect('s0ybean'.replace(rule.regex, rule.replace)).toEqual('s0ybean')
+    expect('beans0y'.replace(rule.regex, rule.replace)).toEqual('beans0y')
+  })
+
+  it(getDescription(dict, 4), () => {
+    const rule = getRule(dict, 4)
+    expect('...word'.replace(rule.regex, rule.replace)).toEqual('...word')
+    expect('..word'.replace(rule.regex, rule.replace)).toEqual('...word')
+    expect('.. word'.replace(rule.regex, rule.replace)).toEqual('... word')
+    expect('.word'.replace(rule.regex, rule.replace)).toEqual('.word')
+    expect('..¿word'.replace(rule.regex, rule.replace)).toEqual('...¿word')
+  })
+
+  it(getDescription(dict, 5), () => {
+    const rule = getRule(dict, 5)
+    expect('...WORD'.replace(rule.regex, m => m.toLowerCase())).toEqual('...word')
+    expect('... WORD'.replace(rule.regex, m => m.toLowerCase())).toEqual('... word')
+    expect('...WOrd'.replace(rule.regex, m => m.toLowerCase())).toEqual('...word')
+    expect('...Con el pelo cano...'.replace(rule.regex, m => m.toLowerCase())).toEqual('...con el pelo cano...')
+  })
 })

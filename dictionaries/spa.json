@@ -16,5 +16,22 @@
     "match": "¡\\s*([^!]+ *[^! ]+)(\\s*)!",
     "replace": "¡$2$1$2!",
     "description": "Use equal number of spaces between exclamation marks referencing the right"
+  },
+  {
+    "type": "regex",
+    "match": "(^|\\W)(s|S)0(y|Y)(\\W|$)",
+    "replace": "$1$2o$3$4",
+    "description": "Replace 's0y'"
+  },
+  {
+    "type": "regex",
+    "match": "^\\.{2}([^\\.]?)(\\p{L}+)",
+    "replace": "...$1$2",
+    "description": "Add missing dot in front"
+  },
+  {
+    "type": "lower",
+    "match": "^\\.{3}\\W?\\p{L}+",
+    "description": "Lowercase '...WORD'"
   }
 ]
