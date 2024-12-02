@@ -10,5 +10,11 @@
     "match": "¿\\s*([^\\?]+ *[^\\? ]+)(\\s*)\\?",
     "replace": "¿$2$1$2?",
     "description": "Use equal number of spaces between question marks referencing the right"
+  },
+  {
+    "type": "regex",
+    "match": "¡\\s*([^!]+ *[^! ]+)(\\s*)!",
+    "replace": "¡$2$1$2!",
+    "description": "Use equal number of spaces between exclamation marks referencing the right"
   }
 ]

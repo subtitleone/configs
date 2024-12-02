@@ -19,4 +19,12 @@ describe('Spanish dictionary', () => {
     expect('¿ abc? ¿abc ?'.replace(rule.regex, rule.replace)).toEqual('¿abc? ¿ abc ?')
     expect('¿ abc? ¿abc ? ¿abc   ?'.replace(rule.regex, rule.replace)).toEqual('¿abc? ¿ abc ? ¿   abc   ?')
   })
+
+  it(getDescription(dict, 2), () => {
+    const rule = getRule(dict, 2)
+    expect('¡ Turner!'.replace(rule.regex, rule.replace)).toEqual('¡Turner!')
+    expect('¡Turner  !'.replace(rule.regex, rule.replace)).toEqual('¡  Turner  !')
+    expect('¡ abc! ¡abc !'.replace(rule.regex, rule.replace)).toEqual('¡abc! ¡ abc !')
+    expect('¡ abc! ¡abc ! ¡abc   !'.replace(rule.regex, rule.replace)).toEqual('¡abc! ¡ abc ! ¡   abc   !')
+  })
 })
