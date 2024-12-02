@@ -1,20 +1,20 @@
 [
   {
     "type": "regex",
-    "match": "^\\| (\\p{L}+)",
-    "replace": "I $1",
-    "description": "Replace | at the start with I"
-  },
-  {
-    "type": "regex",
-    "match": "^(\\W?)S[Ì](\\W?)$",
-    "replace": "$1Sì$2",
-    "description": "Replace SÌ. with lowercase"
+    "match": "\\|( ?\\p{L}+)",
+    "replace": "I$1",
+    "description": "Replace | with I"
   },
   {
     "type": "regex",
     "match": "^Forzal!$",
     "replace": "Forza!",
     "description": "Replace 'Forzal!'"
+  },
+  {
+    "type": "regex",
+    "match": "(^|[\\p{P}]?)SÌì?([\\p{P}]?)",
+    "replace": "$1Sì$2",
+    "description": "Replace 'SÌì' with 'Sì'"
   }
 ]
