@@ -11,7 +11,7 @@
   },
   {
     "type": "regex",
-    "match": "(\\W?\\s?)\\/( ?\\p{L}+)",
+    "match": "(\\W?\\s?)\\/([' ]?\\p{L}+)",
     "replace": "$1I$2",
     "description": "Replace / with I"
   },

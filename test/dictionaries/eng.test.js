@@ -6,6 +6,7 @@ describe('English dictionary', () => {
   it(getDescription(dict, 2), () => {
     const rule = getRule(dict, 2)
     expect('/ would'.replace(rule.regex, rule.replace)).toEqual('I would')
+    expect("/'ve ever had".replace(rule.regex, rule.replace)).toEqual("I've ever had")
     expect('-/ would'.replace(rule.regex, rule.replace)).toEqual('-I would')
     expect('- / would'.replace(rule.regex, rule.replace)).toEqual('- I would')
     expect('(NARRATING) /n ancient'.replace(rule.regex, rule.replace)).toEqual('(NARRATING) In ancient')
