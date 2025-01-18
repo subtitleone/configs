@@ -59,4 +59,9 @@ describe('English dictionary', () => {
     expect("Bob''s car".replace(rule.regex, rule.replace)).toEqual("Bob's car")
     expect("Bob' 'Bib".replace(rule.regex, rule.replace)).toEqual("Bob' 'Bib")
   })
+
+  it(getDescription(dict, 17), () => {
+    const rule = getRule(dict, 17)
+    expect('Where am 1?'.replace(rule.regex, rule.replace)).toEqual('Where am I?')
+  })
 })

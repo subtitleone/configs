@@ -90,5 +90,11 @@
     "match": "(\\w+)''s( |$)",
     "replace": "$1's$2",
     "description": "Fix duplicate single quotes"
+  },
+  {
+    "type": "regex",
+    "match": "am 1\\?",
+    "replace": "am I?",
+    "description": "Fix 'am 1?'"
   }
 ]
