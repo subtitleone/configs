@@ -10,6 +10,7 @@ describe('English dictionary', () => {
     expect('-/ would'.replace(rule.regex, rule.replace)).toEqual('-I would')
     expect('- / would'.replace(rule.regex, rule.replace)).toEqual('- I would')
     expect('(NARRATING) /n ancient'.replace(rule.regex, rule.replace)).toEqual('(NARRATING) In ancient')
+    expect('ARM/TRANSPORT'.replace(rule.regex, rule.replace)).toEqual('ARM/TRANSPORT')
   })
 
   it(getDescription(dict, 3), () => {

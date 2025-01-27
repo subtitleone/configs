@@ -11,9 +11,9 @@
   },
   {
     "type": "regex",
-    "match": "(\\W?\\s?)\\/([' ]?\\p{L}+)",
+    "match": "(\\W?\\s?)(?<!\\p{L})\\/([' ]?\\p{L}+)",
     "replace": "$1I$2",
-    "description": "Replace / with I"
+    "description": "Replace / with I, but not 'ABC/DEF'"
   },
   {
     "type": "regex",
