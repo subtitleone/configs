@@ -27,6 +27,8 @@ describe('English dictionary', () => {
     expect('done. -1'.replace(rule.regex, rule.replace)).toEqual('done. -I')
     expect('- 1...'.replace(rule.regex, rule.replace)).toEqual('- I...')
     expect('- 1 think'.replace(rule.regex, rule.replace)).toEqual('- I think')
+    expect('-1:45 a.m.'.replace(rule.regex, rule.replace)).toEqual('-1:45 a.m.')
+    expect('-11:45 a.m.'.replace(rule.regex, rule.replace)).toEqual('-11:45 a.m.')
   })
 
   it(getDescription(dict, 7), () => {
