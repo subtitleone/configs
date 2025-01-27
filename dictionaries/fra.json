@@ -22,7 +22,7 @@
   },
   {
     "type": "regex",
-    "match": "(^|\\s)\\[l(\\s[^\\]]+)$",
+    "match": "(^|\\s)[\\[l\\|I]{2}(\\s[^\\]]+)$",
     "replace": "$1Il$2",
     "description": "Replace '[l' with 'Il', not including that enclosed in bracket "
   },
@@ -49,5 +49,17 @@
     "match": "(\\p{L}+)( ?)\\|$",
     "replace": "$1$2!",
     "description": "Replace ending | with !"
+  },
+  {
+    "type": "regex",
+    "match": "^I\\[ui ",
+    "replace": "Il lui ",
+    "description": "Fix 'I[ui' in the beginning of sentence"
+  },
+  {
+    "type": "regex",
+    "match": "\\|",
+    "replace": "I",
+    "description": "Fix pipe symbol - should be last one"
   }
 ]

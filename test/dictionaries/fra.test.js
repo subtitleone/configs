@@ -20,6 +20,8 @@ describe('French dictionary', () => {
     const rule = getRule(dict, 4)
     expect('- [l vole !'.replace(rule.regex, rule.replace)).toEqual('- Il vole !')
     expect('[l vole !'.replace(rule.regex, rule.replace)).toEqual('Il vole !')
+    expect('[| va venir.'.replace(rule.regex, rule.replace)).toEqual('Il va venir.')
+    expect('I[ nous reste'.replace(rule.regex, rule.replace)).toEqual('Il nous reste')
     expect('- [look]'.replace(rule.regex, rule.replace)).toEqual('- [look]')
     expect('[l ook]'.replace(rule.regex, rule.replace)).toEqual('[l ook]')
   })
@@ -47,5 +49,15 @@ describe('French dictionary', () => {
     expect('Niya |'.replace(rule.regex, rule.replace)).toEqual('Niya !')
     expect('Niya | Niyo'.replace(rule.regex, rule.replace)).toEqual('Niya | Niyo')
     expect('Niyô|'.replace(rule.regex, rule.replace)).toEqual('Niyô!')
+  })
+
+  it(getDescription(dict, 9), () => {
+    const rule = getRule(dict, 9)
+    expect('I[ui a été'.replace(rule.regex, rule.replace)).toEqual('Il lui a été')
+  })
+
+  it(getDescription(dict, dict.length - 1), () => {
+    const rule = getRule(dict, dict.length - 1)
+    expect('A.|.A'.replace(rule.regex, rule.replace)).toEqual('A.I.A')
   })
 })
