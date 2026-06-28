@@ -22,7 +22,7 @@
     "version": "1",
     "closeable": true,
     "variant": "standard",
-    "expires": "2026-06-28T08:00:00Z",
+    "expires": "2026-06-28T06:00:00Z",
     "message": "Subtitle One will undergo maintenance on 28 June from 2AM (UTC), and it is expected to come back online within a few hours.",
     "level": "info"
   }
