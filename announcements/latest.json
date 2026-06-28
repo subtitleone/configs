@@ -16,14 +16,5 @@
     "expires": "2030-01-01T00:00:00Z",
     "message": "You can upload up to 10 subtitles at once for subpicture conversion when ads are allowed. Simply press SHIFT/CTRL key when selecting the files for upload.",
     "level": "info"
-  },
-  {
-    "id": "maintenance-20260628",
-    "version": "1",
-    "closeable": true,
-    "variant": "standard",
-    "expires": "2026-06-28T06:00:00Z",
-    "message": "Subtitle One will undergo maintenance on 28 June from 2AM (UTC), and it is expected to come back online within a few hours.",
-    "level": "info"
   }
 ]
