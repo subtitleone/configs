@@ -23,7 +23,7 @@
     "closeable": true,
     "variant": "standard",
     "expires": "2030-01-01T00:00:00Z",
-    "message": "We've added experimental support for converting text to PGS subtitles (.sup), including cue positioning. Give it a try and let us know if you hit any issues!",
+    "message": "We've added experimental support for converting text-based subtitles to PGS (.sup). Furthermore, we've significantly improved subpicture conversion performance in Chrome. Give it a try and let us know if you hit any issues!",
     "level": "info"
   }
 ]
