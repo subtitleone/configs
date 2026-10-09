@@ -14,7 +14,7 @@
     "closeable": true,
     "variant": "standard",
     "expires": "2030-01-01T00:00:00Z",
-    "message": "Welcome to our revamped site! We hope you love the fresh look. As always, if you have a feature request, spot a bug, or see anything we can improve, please let us know via our [<u>contact page</u>](/contact/). Thanks for your support!",
+    "message": "Welcome to our revamped site! We hope you love the fresh look. As always, if you have a feature request, spot a bug, or see anything we can improve, please let us know via our [contact page](/contact/). Thanks for your support!",
     "level": "info"
   }
 ]
